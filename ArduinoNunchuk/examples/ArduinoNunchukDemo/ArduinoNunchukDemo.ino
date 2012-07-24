@@ -25,9 +25,9 @@ void loop()
 {
   nunchuk.update();
 
-  Serial.print(nunchuk.analogX, DEC);
+  Serial.print(nunchuk.joyX, DEC);
   Serial.print(' ');
-  Serial.print(nunchuk.analogY, DEC);
+  Serial.print(nunchuk.joyY, DEC);
   Serial.print(' ');
   Serial.print(nunchuk.accelX, DEC);
   Serial.print(' ');

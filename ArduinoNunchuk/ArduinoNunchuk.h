@@ -24,8 +24,8 @@
 class ArduinoNunchuk
 {
   public:
-    int analogX;
-    int analogY;
+    int joyX;
+    int joyY;
     int accelX;
     int accelY;
     int accelZ;

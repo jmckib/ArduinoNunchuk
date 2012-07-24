@@ -56,8 +56,8 @@ void ArduinoNunchuk::update()
     count++;
   }
 
-  ArduinoNunchuk::analogX = values[0];
-  ArduinoNunchuk::analogY = values[1];
+  ArduinoNunchuk::joyX = values[0];
+  ArduinoNunchuk::joyY = values[1];
   ArduinoNunchuk::accelX = values[2] * 2 * 2 + ((values[5] >> 2) & 1) * 2 + ((values[5] >> 3) & 1);
   ArduinoNunchuk::accelY = values[3] * 2 * 2 + ((values[5] >> 4) & 1) * 2 + ((values[5] >> 5) & 1);
   ArduinoNunchuk::accelZ = values[4] * 2 * 2 + ((values[5] >> 6) & 1) * 2 + ((values[5] >> 7) & 1);
