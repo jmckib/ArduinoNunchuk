@@ -32,6 +32,7 @@ class ArduinoNunchuk
     int zButton;
     int cButton;
 
+    void setPowerPins();
     void init();
     void update();
 

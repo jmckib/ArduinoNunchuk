@@ -17,6 +17,7 @@ ArduinoNunchuk nunchuk = ArduinoNunchuk();
 void setup()
 {
   Serial.begin(BAUDRATE);
+  nunchuk.setPowerPins();
   nunchuk.init();
 }
 

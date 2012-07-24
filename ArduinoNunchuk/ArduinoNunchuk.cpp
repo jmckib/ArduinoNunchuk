@@ -23,6 +23,16 @@
 
 #define ADDRESS 0x52
 
+void ArduinoNunchuk::setPowerPins()
+{
+  #define pwrpin PORTC3
+  #define gndpin PORTC2
+  DDRC |= _BV(pwrpin) | _BV(gndpin);
+  PORTC &=~ _BV(gndpin);
+  PORTC |=  _BV(pwrpin);
+  delay(100);  // wait for things to stabilize
+}
+
 void ArduinoNunchuk::init()
 {
   Wire.begin();
